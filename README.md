@@ -8,7 +8,7 @@ $ python AWD.py "WORD"
 ```
 # Example:
 ```bash
-$ python AWD.py leephant
+$ python AWD.py "leephant"
 ```
 Output:
 ```
