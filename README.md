@@ -6,10 +6,11 @@ Anagrams of words with definitions
 ```bash
 $ python AWD.py "WORD"
 ```
-Example
+# Example:
 ```bash
 $ python AWD.py leephant
 ```
+Output:
 ```
 Elephant
 1) five-toed pachyderm
