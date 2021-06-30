@@ -1,5 +1,5 @@
 # AnagramWithDefinitions
-Anagrams of words with definitions
+All possible anagrams of words with definitions
 
 # How to run it:
 *Make sure that you're in the correct folder*
