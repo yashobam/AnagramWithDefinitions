@@ -1,219 +1,127 @@
 import sys 
 import json
-def ana(word):
-    file=open("data/a.json","r",encoding="utf-8")
-    json_string=file.read()
-    a=json.loads(json_string)
-    file.close()
-    file=open("data/b.json","r",encoding="utf-8")
-    json_string=file.read()
-    b=json.loads(json_string)
-    file.close()
-    file=open("data/c.json","r",encoding="utf-8")
-    json_string=file.read()
-    c=json.loads(json_string)
-    file.close()
-    file=open("data/d.json","r",encoding="utf-8")
-    json_string=file.read()
-    d=json.loads(json_string)
-    file.close()
-    file=open("data/e.json","r",encoding="utf-8")
-    json_string=file.read()
-    e=json.loads(json_string)
-    file.close()
-    file=open("data/f.json","r",encoding="utf-8")
-    json_string=file.read()
-    f=json.loads(json_string)
-    file.close()
-    file=open("data/g.json","r",encoding="utf-8")
-    json_string=file.read()
-    g=json.loads(json_string)
-    file.close()
-    file=open("data/h.json","r",encoding="utf-8")
-    json_string=file.read()
-    h=json.loads(json_string)
-    file.close()
-    file=open("data/i.json","r",encoding="utf-8")
-    json_string=file.read()
-    i=json.loads(json_string)
-    file.close()
-    file=open("data/j.json","r",encoding="utf-8")
-    json_string=file.read()
-    j=json.loads(json_string)
-    file.close()
-    file=open("data/k.json","r",encoding="utf-8")
-    json_string=file.read()
-    k=json.loads(json_string)
-    file.close()
-    file=open("data/l.json","r",encoding="utf-8")
-    json_string=file.read()
-    l=json.loads(json_string)
-    file.close()
-    file=open("data/m.json","r",encoding="utf-8")
-    json_string=file.read()
-    m=json.loads(json_string)
-    file.close()
-    file=open("data/n.json","r",encoding="utf-8")
-    json_string=file.read()
-    n=json.loads(json_string)
-    file.close()
-    file=open("data/o.json","r",encoding="utf-8")
-    json_string=file.read()
-    o=json.loads(json_string)
-    file.close()
-    file=open("data/p.json","r",encoding="utf-8")
-    json_string=file.read()
-    p=json.loads(json_string)
-    file.close()
-    file=open("data/q.json","r",encoding="utf-8")
-    json_string=file.read()
-    q=json.loads(json_string)
-    file.close()
-    file=open("data/r.json","r",encoding="utf-8")
-    json_string=file.read()
-    r=json.loads(json_string)
-    file.close()
-    file=open("data/s.json","r",encoding="utf-8")
-    json_string=file.read()
-    s=json.loads(json_string)
-    file.close()
-    file=open("data/t.json","r",encoding="utf-8")
-    json_string=file.read()
-    t=json.loads(json_string)
-    file.close()
-    file=open("data/u.json","r",encoding="utf-8")
-    json_string=file.read()
-    u=json.loads(json_string)
-    file.close()
-    file=open("data/v.json","r",encoding="utf-8")
-    json_string=file.read()
-    v=json.loads(json_string)
-    file.close()
-    file=open("data/w.json","r",encoding="utf-8")
-    json_string=file.read()
-    w=json.loads(json_string)
-    file.close()
-    file=open("data/x.json","r",encoding="utf-8")
-    json_string=file.read()
-    x=json.loads(json_string)
-    file.close()
-    file=open("data/y.json","r",encoding="utf-8")
-    json_string=file.read()
-    y=json.loads(json_string)
-    file.close()
-    file=open("data/z.json","r",encoding="utf-8")
-    json_string=file.read()
-    z=json.loads(json_string)
-    file.close()
-    words=[]
-    words=list(a)+list(b)+list(c)+list(d)+list(e)+list(f)+list(g)+list(h)+list(i)+list(j)+list(k)+list(l)+list(m)+list(n)+list(o)+list(p)+list(q)+list(r)+list(s)+list(t)+list(u)+list(v)+list(w)+list(x)+list(y)+list(z)
-    word=word.upper()
-    wordss=list(words)
-    for ja in range(len(words)):
-        wordss[ja]=wordss[ja].upper()
-    for ij in range(len(wordss)):
-        if len(wordss[ij])==len(word):
-            if sorted(word)==sorted(wordss[ij]):
-                print(wordss[ij][0].upper()+wordss[ij][1:].lower())
-                if wordss[ij][0].lower()=="a":
-                    for il in range(len(a[words[ij]]["meanings"])):
-                        x=dict(a[words[ij]]["meanings"][il])
-                        print(str(il+1)+") "+x["def"])
-                elif wordss[ij][0].lower()=="b":
-                    for il in range(len(b[words[ij]]["meanings"])):
-                        x=dict(b[words[ij]]["meanings"][il])
-                        print(str(il+1)+") "+x["def"])
-                elif wordss[ij][0].lower()=="c":
-                    for il in range(len(c[words[ij]]["meanings"])):
-                        x=dict(c[words[ij]]["meanings"][il])
-                        print(str(il+1)+") "+x["def"])
-                elif wordss[ij][0].lower()=="d":
-                    for il in range(len(d[words[ij]]["meanings"])):
-                        x=dict(d[words[ij]]["meanings"][il])
-                        print(str(il+1)+") "+x["def"])
-                elif wordss[ij][0].lower()=="e":
-                    for il in range(len(e[words[ij]]["meanings"])):
-                        x=dict(e[words[ij]]["meanings"][il])
-                        print(str(il+1)+") "+x["def"])
-                elif wordss[ij][0].lower()=="f":
-                    for il in range(len(f[words[ij]]["meanings"])):
-                        x=dict(f[words[ij]]["meanings"][il])
-                        print(str(il+1)+") "+x["def"])
-                elif wordss[ij][0].lower()=="g":
-                    for il in range(len(g[words[ij]]["meanings"])):
-                        x=dict(g[words[ij]]["meanings"][il])
-                        print(str(il+1)+") "+x["def"])
-                elif wordss[ij][0].lower()=="h":
-                    for il in range(len(h[words[ij]]["meanings"])):
-                        x=dict(h[words[ij]]["meanings"][il])
-                        print(str(il+1)+") "+x["def"])
-                elif wordss[ij][0].lower()=="i":
-                    for il in range(len(i[words[ij]]["meanings"])):
-                        x=dict(i[words[ij]]["meanings"][il])
-                        print(str(il+1)+") "+x["def"])
-                elif wordss[ij][0].lower()=="j":
-                    for il in range(len(j[words[ij]]["meanings"])):
-                        x=dict(j[words[ij]]["meanings"][il])
-                        print(str(il+1)+") "+x["def"])
-                elif wordss[ij][0].lower()=="k":
-                    for il in range(len(k[words[ij]]["meanings"])):
-                        x=dict(k[words[ij]]["meanings"][il])
-                        print(str(il+1)+") "+x["def"])
-                elif wordss[ij][0].lower()=="l":
-                    for il in range(len(l[words[ij]]["meanings"])):
-                        x=dict(l[words[ij]]["meanings"][il])
-                        print(str(il+1)+") "+x["def"])
-                elif wordss[ij][0].lower()=="m":
-                    for il in range(len(m[words[ij]]["meanings"])):
-                        x=dict(m[words[ij]]["meanings"][il])
-                        print(str(il+1)+") "+x["def"])
-                elif wordss[ij][0].lower()=="n":
-                    for il in range(len(n[words[ij]]["meanings"])):
-                        x=dict(n[words[ij]]["meanings"][il])
-                        print(str(il+1)+") "+x["def"])
-                elif wordss[ij][0].lower()=="o":
-                    for il in range(len(o[words[ij]]["meanings"])):
-                        x=dict(o[words[ij]]["meanings"][il])
-                        print(str(il+1)+") "+x["def"])
-                elif wordss[ij][0].lower()=="p":
-                    for il in range(len(p[words[ij]]["meanings"])):
-                        x=dict(p[words[ij]]["meanings"][il])
-                        print(str(il+1)+") "+x["def"])
-                elif wordss[ij][0].lower()=="r":
-                    for il in range(len(r[words[ij]]["meanings"])):
-                        x=dict(r[words[ij]]["meanings"][il])
-                        print(str(il+1)+") "+x["def"])
-                elif wordss[ij][0].lower()=="s":
-                    for il in range(len(s[words[ij]]["meanings"])):
-                        x=dict(s[words[ij]]["meanings"][il])
-                        print(str(il+1)+") "+x["def"])
-                elif wordss[ij][0].lower()=="t":
-                    for il in range(len(t[words[ij]]["meanings"])):
-                        x=dict(t[words[ij]]["meanings"][il])
-                        print(str(il+1)+") "+x["def"])
-                elif wordss[ij][0].lower()=="u":
-                    for il in range(len(u[words[ij]]["meanings"])):
-                        x=dict(u[words[ij]]["meanings"][il])
-                        print(str(il+1)+") "+x["def"])
-                elif wordss[ij][0].lower()=="v":
-                    for il in range(len(v[words[ij]]["meanings"])):
-                        x=dict(v[words[ij]]["meanings"][il])
-                        print(str(il+1)+") "+x["def"])
-                elif wordss[ij][0].lower()=="w":
-                    for il in range(len(w[words[ij]]["meanings"])):
-                        x=dict(w[words[ij]]["meanings"][il])
-                        print(str(il+1)+") "+x["def"])
-                elif wordss[ij][0].lower()=="x":
-                    for il in range(len(x[words[ij]]["meanings"])):
-                        a=dict(x[words[ij]]["meanings"][il])
-                        print(str(il+1)+") "+a["def"])
-                elif wordss[ij][0].lower()=="y":
-                    for il in range(len(y[words[ij]]["meanings"])):
-                        x=dict(y[words[ij]]["meanings"][il])
-                        print(str(il+1)+") "+x["def"])
-                elif wordss[ij][0].lower()=="z":
-                    for il in range(len(z[words[ij]]["meanings"])):
-                        x=dict(z[words[ij]]["meanings"][il])
-                        print(str(il+1)+") "+x["def"])
+import time
+from os import system
+from itertools import combinations,permutations
 
-ana(sys.argv[1])
+def ana(words,word):
+    word="".join(sorted(word.lower().replace(" ","").replace("-","").replace("_","")))
+    anawords={}
+    if word in words:
+        for key,val in words[word]["word"].items():
+            anawords[key]=[]
+            for i in val:
+                anawords[key].append(i["def"])
+
+    return anawords
+
+def printanawords(words,word):
+    anawords=ana(words,word)
+    if anawords !={}:
+        for key,val in anawords.items():
+            print(key)
+            
+    else:
+        print("Word not found")
+
+def printana(words,word):
+    anawords=ana(words,word)
+    c=0
+    if anawords !={}:
+        for key,val in anawords.items():
+            print(key+":")
+            c=0
+            for i in val:
+                print(str(c+1)+") "+i)
+                c=c+1
+    else:
+        print("Word not found")
+
+def anaCombinations(words,word,n):
+    allwords=[''.join(l) for i in range(len(word),n-1,-1) for l in combinations(word, i)]
+    allwords=sorted(list(set(allwords)),key=len,reverse=True)
+    c=0
+    anacombwords={}
+    for i in allwords:
+        anawords=ana(words,i)
+        if anawords !={}:
+            for key,val in anawords.items():
+                try:
+                    anacombwords[len(i)][key]=[]
+                except:
+                    anacombwords[len(i)]={key:[]}
+                for k in val:
+                    anacombwords[len(i)][key].append(k)
+    return anacombwords
+
+def printAnaCombinations(words,word,n):
+    word="".join(sorted(word.lower().replace(" ","").replace("-","").replace("_","")))
+    anacombwords=anaCombinations(words,word,n)
+    c=0
+    if anacombwords !={}:
+        for key1,val1 in anacombwords.items():
+            print("\nWords with length {}:".format(key1))
+            for key,val in val1.items():
+                print("\n"+key+":")
+                c=0
+                for i in val:
+                    print(str(c+1)+") "+i)
+                    c=c+1
+    else:
+        print("No words not found")
+
+def printAnaCombinationswords(words,word,n):
+    word="".join(sorted(word.lower().replace(" ","").replace("-","").replace("_","")))
+    anacombwords=anaCombinations(words,word,n)
+    if anacombwords !={}:
+        for key1,val1 in anacombwords.items():
+            print("\nWords with length {}:".format(key1))
+            for key,val in val1.items():
+                print(key)
+    else:
+        print("No words not found")
+
+
+def select(words):
+    
+    print("""
+Type 1 for anagram of full word only (Without Definitions)
+Type 2 for anagram of full word only (With Definitions)
+Type 3 for anagram of all contained words (Without Definitions)
+Type 4 for anagram of all contained words (With Definitions)
+Type 5 to clear screen
+Type 999 to exit
+        """)
+    ch=int(input("Enter your choice: "))
+    print()
+    if ch==1:
+        printanawords(words,input("Enter your word: "))
+        select(words)
+    elif ch==2:
+        printana(words,input("Enter your word: "))
+        select(words)
+    elif ch==3:
+        printAnaCombinationswords(words,input("Enter your word: "),int(input("Enter shortest desired length of anagrams: ")))
+        select(words)
+    elif ch==4:
+        printAnaCombinations(words,input("Enter your word: "),int(input("Enter shortest desired length of anagrams: ")))
+        select(words)
+    elif ch==5:
+        system('cls')
+        select(words)
+    elif ch!=999:
+        print("\nThat choice doesn't exist\n")
+        time.sleep(2)
+        select(words)
+def start():
+    words={}
+    file=open("data/wordsDict.json","r",encoding="utf-8")
+    json_string=file.read()
+    words=json.loads(json_string)
+    file.close()
+    try:
+        select(words)
+    except:
+        print("Some error occoured")
+        start()
+start()
