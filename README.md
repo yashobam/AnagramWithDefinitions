@@ -2,7 +2,7 @@
 All anagrams of words with definitions in my Database
 
 # Requirements
- python3
+ Python3
 # How to run it:
 *Make sure that you're in the correct folder*
 ```bash
@@ -23,5 +23,5 @@ Type 999 to exit
 
 Enter your choice:"ENTER CHOICE"
 Enter your word: "ENTER WORD"
-
+*Output*
 ```
