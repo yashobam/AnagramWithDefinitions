@@ -12,7 +12,6 @@ $ python AWD.py
 ```bash
 $ python AWD.py
 ```
-Output:
 ```
 Type 1 for anagram of full word only (Without Definitions)
 Type 2 for anagram of full word only (With Definitions)
