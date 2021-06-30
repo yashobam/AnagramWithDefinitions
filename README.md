@@ -1,6 +1,8 @@
 # AnagramWithDefinitions
-All possible anagrams of words with definitions
+All anagrams of words with definitions in my Database
 
+# Requirements
+ python3
 # How to run it:
 *Make sure that you're in the correct folder*
 ```bash
